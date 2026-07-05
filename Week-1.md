@@ -111,7 +111,12 @@ public class P3 {
     }
 }
 ```
+### Sample Output
 
+```text
+Enter a year: 2024
+2024 is a Leap Year.
+```
 
 ### Question 4
 
@@ -159,7 +164,7 @@ Enter the third number: 32
 Largest number: 32
 ```
 
-````markdown id="v5m2qd"
+
 ### Question 5
 
 **Problem:**  
@@ -189,12 +194,7 @@ public class P5 {
 }
 ```
 
-### Sample Output
 
-```text
-Enter a year: 2024
-2024 is a Leap Year.
-```
 ````
 
 ````
@@ -246,7 +246,7 @@ Enter a character: A
 A is a Vowel.
 ```
 ````
-````markdown id="q7up2l"
+````
 ### Question 7
 
 **Problem:**  
@@ -285,7 +285,7 @@ Enter a character: G
 G is an Uppercase letter.
 ```
 ````
-````markdown id="v8elgv"
+````
 ### Question 8
 
 **Problem:**  
@@ -322,7 +322,7 @@ Enter your age: 20
 You are eligible to vote.
 ```
 ````
-````markdown id="z9pass"
+````
 ### Question 9
 
 **Problem:**  
@@ -359,7 +359,7 @@ Enter the marks: 78
 Student has Passed.
 ```
 ````
-
+````
 ### Question 10
 
 **Problem:**  
