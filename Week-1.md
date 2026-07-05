@@ -29,6 +29,45 @@ public class P1 {
 }
 ```
 
+
+````markdown
+### Question 2
+
+**Problem:**  
+Write a Java program to check whether a given number is **Even or Odd**.
+
+### Java Code
+
+```java
+import java.util.Scanner;
+
+public class P2 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+
+        if (n % 2 == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
+
+        sc.close();
+    }
+}
+```
+
+### Sample Output
+
+```text
+Enter a number: 12
+Even
+```
+````
+
 ### Sample Output
 
 ```text
