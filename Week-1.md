@@ -1,4 +1,4 @@
-````markdown
+
 ### Question 1
 
 **Problem:**  
@@ -79,8 +79,8 @@ Positive
 
 
 
-````
-````markdown
+
+
 ### Question 3
 
 **Problem:**  
@@ -122,4 +122,3 @@ Enter the first number: 25
 Enter the second number: 18
 Largest number: 25
 ```
-````
