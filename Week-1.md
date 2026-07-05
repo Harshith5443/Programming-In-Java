@@ -1,4 +1,4 @@
-# Question 1
+## Question 1
 
 **Problem:**  
 Write a Java program to check whether a given number is Positive, Negative, or Zero.
