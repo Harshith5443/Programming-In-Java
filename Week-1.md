@@ -412,5 +412,220 @@ Enter the marks: 85
 Grade: B
 ```
 ````
+````
+````markdown id="q11char"
+### Question 11
 
+**Problem:**  
+Write a Java program to check whether a given character is an **Alphabet**, **Digit**, or **Special Character**.
+
+### Java Code
+
+```java
+import java.util.Scanner;
+
+public class P11 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a character: ");
+        char ch = sc.next().charAt(0);
+
+        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+            System.out.println(ch + " is an Alphabet.");
+        } else if (ch >= '0' && ch <= '9') {
+            System.out.println(ch + " is a Digit.");
+        } else {
+            System.out.println(ch + " is a Special Character.");
+        }
+
+        sc.close();
+    }
+}
+```
+
+### Sample Output
+
+```text
+Enter a character: @
+@ is a Special Character.
+```
+````
+````markdown id="q12code"
+### Question 12
+
+**Problem:**  
+Write a Java program to display the **department name** based on the given department code.
+
+| Code | Department |
+|------|------------|
+| 101 | HR |
+| 102 | Finance |
+| 103 | IT |
+| 104 | Sales |
+| Others | Invalid Department Code |
+
+### Java Code
+
+```java
+import java.util.Scanner;
+
+public class P12 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the department code: ");
+        int code = sc.nextInt();
+
+        if (code == 101) {
+            System.out.println("Department: HR");
+        } else if (code == 102) {
+            System.out.println("Department: Finance");
+        } else if (code == 103) {
+            System.out.println("Department: IT");
+        } else if (code == 104) {
+            System.out.println("Department: Sales");
+        } else {
+            System.out.println("Invalid Department Code");
+        }
+
+        sc.close();
+    }
+}
+```
+
+### Sample Output
+
+```text
+Enter the department code: 101
+Department: HR
+```
+````
+````markdown id="q16atm"
+### Question 16
+
+**Problem:**  
+Write a Java program to display the following **ATM menu options**.
+
+1. Balance
+2. Deposit
+3. Withdraw
+4. Exit
+
+### Java Code
+
+```java
+import java.util.Scanner;
+
+public class P16 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("===== ATM Menu =====");
+        System.out.println("1. Balance");
+        System.out.println("2. Deposit");
+        System.out.println("3. Withdraw");
+        System.out.println("4. Exit");
+
+        System.out.print("Enter your choice: ");
+        int choice = sc.nextInt();
+
+        if (choice == 1) {
+            System.out.println("Balance Selected");
+        } else if (choice == 2) {
+            System.out.println("Deposit Selected");
+        } else if (choice == 3) {
+            System.out.println("Withdraw Selected");
+        } else if (choice == 4) {
+            System.out.println("Thank you for using the ATM.");
+        } else {
+            System.out.println("Invalid Choice");
+        }
+
+        sc.close();
+    }
+}
+```
+
+### Sample Output
+
+```text
+===== ATM Menu =====
+1. Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice: 2
+Deposit Selected
+```
+````
+````markdown id="q17bill"
+### Question 17
+
+**Problem:**  
+Write a Java program to implement a **Simple Restaurant Ordering System** and calculate the bill based on the selected item.
+
+| Item | Price (₹) |
+|------|----------:|
+| 1. Pizza | 250 |
+| 2. Burger | 150 |
+| 3. Sandwich | 120 |
+| 4. Coffee | 80 |
+
+### Java Code
+
+```java
+import java.util.Scanner;
+
+public class P17 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("===== Restaurant Menu =====");
+        System.out.println("1. Pizza - ₹250");
+        System.out.println("2. Burger - ₹150");
+        System.out.println("3. Sandwich - ₹120");
+        System.out.println("4. Coffee - ₹80");
+
+        System.out.print("Enter your choice: ");
+        int choice = sc.nextInt();
+
+        if (choice == 1) {
+            System.out.println("Item: Pizza");
+            System.out.println("Bill Amount: ₹250");
+        } else if (choice == 2) {
+            System.out.println("Item: Burger");
+            System.out.println("Bill Amount: ₹150");
+        } else if (choice == 3) {
+            System.out.println("Item: Sandwich");
+            System.out.println("Bill Amount: ₹120");
+        } else if (choice == 4) {
+            System.out.println("Item: Coffee");
+            System.out.println("Bill Amount: ₹80");
+        } else {
+            System.out.println("Invalid Choice");
+        }
+
+        sc.close();
+    }
+}
+```
+
+### Sample Output
+
+```text
+===== Restaurant Menu =====
+1. Pizza - ₹250
+2. Burger - ₹150
+3. Sandwich - ₹120
+4. Coffee - ₹80
+Enter your choice: 2
+Item: Burger
+Bill Amount: ₹150
+```
+````
 
