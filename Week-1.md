@@ -1,3 +1,4 @@
+````markdown
 ### Question 1
 
 **Problem:**  
@@ -30,7 +31,7 @@ public class P1 {
 ```
 
 
-````markdown
+
 ### Question 2
 
 **Problem:**  
@@ -66,7 +67,7 @@ public class P2 {
 Enter a number: 12
 Even
 ```
-````
+
 
 ### Sample Output
 
@@ -74,3 +75,8 @@ Even
 Enter a number: 25
 Positive
 ```
+
+
+
+
+````
