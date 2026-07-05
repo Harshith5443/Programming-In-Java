@@ -3,7 +3,7 @@
 **Problem:**  
 Write a Java program to check whether a given number is Positive, Negative, or Zero.
 
-## Java Code
+### Java Code
 
 ```java
 import java.util.Scanner;
@@ -29,7 +29,7 @@ public class P1 {
 }
 ```
 
-## Sample Output
+### Sample Output
 
 ```text
 Enter a number: 25
