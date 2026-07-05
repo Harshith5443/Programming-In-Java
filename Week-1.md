@@ -1,4 +1,4 @@
-````markdown id="l4n8qm"
+````markdown 
 ### Question 1
 
 **Problem:**  
@@ -80,7 +80,9 @@ Even
 **Problem:**  
 Write a Java program to find the **largest of two numbers**.
 
-String result=max>min? "Even":"Odd";
+Note:String result=max>min? "Even":"Odd";
+Math.max(a,b);
+
 ### Java Code
 
 ```java
@@ -357,7 +359,7 @@ Enter the marks: 78
 Student has Passed.
 ```
 ````
-````markdown id="g10mark"
+
 ### Question 10
 
 **Problem:**  
