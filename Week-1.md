@@ -1,9 +1,11 @@
-```java
-/* Question 1:
-   Write a Java program to check whether a given number is
-   Positive, Negative, or Zero.
-*/
+# Question 1
 
+**Problem:**  
+Write a Java program to check whether a given number is Positive, Negative, or Zero.
+
+## Java Code
+
+```java
 import java.util.Scanner;
 
 public class P1 {
@@ -25,4 +27,11 @@ public class P1 {
         sc.close();
     }
 }
+```
+
+## Sample Output
+
+```text
+Enter a number: 25
+Positive
 ```
