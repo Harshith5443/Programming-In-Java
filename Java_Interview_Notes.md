@@ -1,6 +1,5 @@
-# Java Interview Simple Notes
+# Java Interview  Notes
 
-> Simple English, simple points, and interview-friendly notes.
 
 ## 1. What is JDK?
 
