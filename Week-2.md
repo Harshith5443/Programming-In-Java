@@ -1,4 +1,35 @@
 ````markdown
+### Question 1
+
+**Problem:**  
+Write a Java program to print **"Hello Java" without using a semicolon**.
+
+### Java Code
+
+```java
+public class P1 {
+    public static void main(String[] args) {
+
+        if (System.out.printf("Hello Java") == null) {
+        }
+
+        // Another way to write the program
+        for (int i = 0; i < 1; System.out.println("Hello Java")) {
+            i++;
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+Hello Java
+Hello Java
+```
+````
+
+````markdown
 ### Question 2
 
 **Problem:**  
@@ -33,4 +64,6 @@ Enter a sentence: Hello Java Programming
 Sentence without white spaces: HelloJavaProgramming
 ```
 ````
+
+
 
