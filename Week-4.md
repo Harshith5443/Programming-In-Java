@@ -217,4 +217,180 @@ loading
 ```
 ````
 
+````markdown id="q4stringoperations"
+
+### Question 4
+
+**Problem:**  
+Write a Java program to perform the following string operations:
+
+1. Print the original string.
+2. Extract vowels and consonants.
+3. Reverse only the vowels.
+4. Reverse both vowels and consonants.
+5. Reverse only the consonants.
+6. Count vowels and consonants.
+7. Reverse the first half of the string.
+8. Reverse the second half of the string.
+
+**Input:** `Methodoverloading`
+
+### Java Code
+
+```java
+public class P4 {
+
+    static String reverse(String str) {
+
+        char[] ch = str.toCharArray();
+
+        int i = 0;
+        int j = ch.length - 1;
+
+        while (i < j) {
+
+            char temp = ch[i];
+            ch[i] = ch[j];
+            ch[j] = temp;
+
+            i++;
+            j--;
+        }
+
+        return new String(ch);
+    }
+
+    public static void main(String[] args) {
+
+        String str = "Methodoverloading";
+
+        System.out.println("The String is : " + str);
+
+        String vowels = str.replaceAll("[^aeiouAEIOU]", "");
+        String consonants = str.replaceAll("[aeiouAEIOU]", "");
+
+        System.out.println("Vowels : " + vowels + "    Consonants : " + consonants);
+
+        System.out.println("Reverse Vowels : " + reverse(vowels) + "    Consonants : " + consonants);
+
+        System.out.println("Reverse Vowels : " + reverse(vowels)
+                + "    Reverse Consonants : " + reverse(consonants));
+
+        System.out.println("Vowels : " + vowels
+                + "    Reverse Consonants : " + reverse(consonants));
+
+        System.out.println("Vowels Length : " + vowels.length()
+                + "    Consonants Length : " + consonants.length());
+
+        System.out.println("1st Half String Reverse : "
+                + reverse(str.substring(0, str.length() / 2))
+                + str.substring(str.length() / 2));
+
+        System.out.println("2nd Half String Reverse : "
+                + str.substring(0, str.length() / 2)
+                + reverse(str.substring(str.length() / 2)));
+    }
+}
+```
+
+### Sample Output
+
+```text
+The String is : Methodoverloading
+Vowels : eooeaia    Consonants : Mthdvrldng
+Reverse Vowels : aiaeooe    Consonants : Mthdvrldng
+Reverse Vowels : aiaeooe    Reverse Consonants : gndlrvdhtM
+Vowels : eooeaia    Reverse Consonants : gndlrvdhtM
+Vowels Length : 7    Consonants Length : 10
+1st Half String Reverse : revodohteMloading
+2nd Half String Reverse : Methodovegnidaolr
+```
+````
+
+````markdown id="q5asciiencryption"
+
+### Question 5
+
+**Problem:**  
+Write a Java program to convert the string **"hello"** into **"lipps"** using **ASCII values** (each character is shifted by +4).
+
+**Input:** `hello`
+
+### Java Code
+
+```java
+public class P5 {
+    public static void main(String[] args) {
+
+        String str = "hello";
+        String result = "";
+
+        for (int i = 0; i < str.length(); i++) {
+
+            char ch = str.charAt(i);
+
+            result += (char) (ch + 4);
+        }
+
+        System.out.println("Original String : " + str);
+        System.out.println("Encrypted String : " + result);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Original String : hello
+Encrypted String : lipps
+```
+````
+
+````markdown id="q6charfrequencyarray"
+
+### Question 6
+
+**Problem:**  
+Write a Java program to **count the frequency of each character** in a given string using an array.
+
+**Input:** `aabbccdd`
+
+### Java Code
+
+```java
+public class P6 {
+    public static void main(String[] args) {
+
+        String str = "aabbccdd";
+
+        int[] arr = new int[127];
+
+        for (int i = 0; i < str.length(); i++) {
+
+            char ch = str.charAt(i);
+
+            arr[ch]++;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] != 0) {
+
+                System.out.println((char) i + " : " + arr[i]);
+            }
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+a : 2
+b : 2
+c : 2
+d : 2
+```
+````
+
 
