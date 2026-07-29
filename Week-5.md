@@ -128,3 +128,134 @@ Most Repeated Character : e
 Frequency : 3
 ```
 ````
+
+````markdown id="q3largestpalindromicsubstring"
+
+### Question 3
+
+**Problem:**  
+Write a Java program to find the **largest palindromic substring** in a given string.
+
+**Input:** `aabbad`
+
+### Java Code
+
+```java
+public class P3 {
+
+    static boolean isPalindrome(String str) {
+
+        int i = 0;
+        int j = str.length() - 1;
+
+        while (i < j) {
+
+            if (str.charAt(i) != str.charAt(j)) {
+
+                return false;
+            }
+
+            i++;
+            j--;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        String str = "aabbad";
+
+        String max = "";
+
+        for (int i = 0; i < str.length(); i++) {
+
+            for (int j = i + 1; j <= str.length(); j++) {
+
+                String temp = str.substring(i, j);
+
+                if (isPalindrome(temp) && temp.length() > max.length()) {
+
+                    max = temp;
+                }
+            }
+        }
+
+        System.out.println("Largest Palindromic Substring : " + max);
+        System.out.println("Length : " + max.length());
+    }
+}
+```
+
+### Sample Output
+
+```text
+Largest Palindromic Substring : abba
+Length : 4
+```
+````
+
+````markdown id="q5anagramfrequency"
+
+### Question 5
+
+**Problem:**  
+Write a Java program to check whether two given strings are **Anagrams** or not using a frequency array.
+
+**Input:**  
+String 1: `listen`  
+String 2: `silent`
+
+### Java Code
+
+```java
+public class P5 {
+
+    public static void main(String[] args) {
+
+        String str1 = "listen";
+        String str2 = "silent";
+
+        if (str1.length() != str2.length()) {
+
+            System.out.println("Not Anagram");
+            return;
+        }
+
+        int[] arr = new int[127];
+
+        for (int i = 0; i < str1.length(); i++) {
+
+            char ch = str1.charAt(i);
+
+            arr[ch]++;
+        }
+
+        for (int i = 0; i < str2.length(); i++) {
+
+            char ch = str2.charAt(i);
+
+            arr[ch]--;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] != 0) {
+
+                System.out.println("Not Anagram");
+                return;
+            }
+        }
+
+        System.out.println("Anagram");
+    }
+}
+```
+
+### Sample Output
+
+```text
+Anagram
+```
+````
+
