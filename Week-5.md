@@ -216,12 +216,6 @@ public class P5 {
         String str1 = "listen";
         String str2 = "silent";
 
-        if (str1.length() != str2.length()) {
-
-            System.out.println("Not Anagram");
-            return;
-        }
-
         int[] arr = new int[127];
 
         for (int i = 0; i < str1.length(); i++) {
