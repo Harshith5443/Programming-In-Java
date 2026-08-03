@@ -253,3 +253,46 @@ Anagram
 ```
 ````
 
+````markdown id="q1sumevendigits"
+
+### Question 1
+
+**Problem:**  
+Write a Java program to find the **sum of only even digits** in the given number.
+
+**Input:** `948216083`
+
+### Java Code
+
+```java
+public class P1 {
+    public static void main(String[] args) {
+
+        int num = 948216083;
+
+        int sum = 0;
+
+        while (num > 0) {
+
+            int rem = num % 10;
+
+            if (rem % 2 == 0) {
+
+                sum += rem;
+            }
+
+            num = num / 10;
+        }
+
+        System.out.println("Sum of Even Digits : " + sum);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Sum of Even Digits : 20
+```
+````
+
