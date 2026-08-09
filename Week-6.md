@@ -281,17 +281,18 @@ public class P6 {
 Factorial of 5 : 120
 ```
 ````
+
+````markdown
 # Question 7
 
-**Problem:**\
-Write a Java program to check whether the given number is a **Strong
-Number** or not using a **method**.
+**Problem:**  
+Write a Java program to check whether the given number is a **Strong Number** or not using a **method**.
 
 **Input:** `145`
 
 ## Java Code
 
-``` java
+```java
 public class P7 {
 
     static int factorial(int num) {
@@ -332,12 +333,5 @@ public class P7 {
         }
     }
 }
-```
-
-## Sample Output
-
-``` text
-Strong Number
-```
 
 ```
