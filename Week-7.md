@@ -154,11 +154,6 @@ public class P3 {
 ```text
 Next Prime Number : 11
 ```
-### Sample Output
-
-```text
-Prime Number
-```
 
 ````
 ````markdown
@@ -217,4 +212,50 @@ public class P4 {
 19
 23
 29
+```
+
+````
+````markdown
+### Question 5
+
+**Problem:**  
+Write a Java program to check whether the given number is **Prime or Not using count**.
+
+**Input:** `7`
+
+### Java Code
+
+```java
+public class P5 {
+
+    public static void main(String[] args) {
+
+        int num = 7;
+
+        int count = 0;
+
+        for (int i = 1; i <= num; i++) {
+
+            if (num % i == 0) {
+
+                count++;
+            }
+        }
+
+        if (count == 2) {
+
+            System.out.println("Prime Number");
+
+        } else {
+
+            System.out.println("Not a Prime Number");
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+Prime Number
 ```
