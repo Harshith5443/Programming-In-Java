@@ -342,6 +342,7 @@ public class P7 {
 Strong Number
 ```
 
+
 ````markdown id="q8integertobinary"
 
 ### Question 8
