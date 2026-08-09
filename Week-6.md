@@ -281,19 +281,17 @@ public class P6 {
 Factorial of 5 : 120
 ```
 ````
+# Question 7
 
-````markdown id="p7strongnumbermethod"
-
-### Question 7
-
-**Problem:**  
-Write a Java program to check whether the given number is a **Strong Number** or not using a **method**.
+**Problem:**\
+Write a Java program to check whether the given number is a **Strong
+Number** or not using a **method**.
 
 **Input:** `145`
 
-### Java Code
+## Java Code
 
-```java
+``` java
 public class P7 {
 
     static int factorial(int num) {
@@ -336,25 +334,24 @@ public class P7 {
 }
 ```
 
-### Sample Output
+## Sample Output
 
-```text
+``` text
 Strong Number
 ```
 
+------------------------------------------------------------------------
 
-````markdown id="q8integertobinary"
+# Question 8
 
-### Question 8
-
-**Problem:**  
+**Problem:**\
 Write a Java program to **convert an integer into binary**.
 
 **Input:** `10`
 
-### Java Code
+## Java Code
 
-```java
+``` java
 public class P8 {
 
     static String binary(int num) {
@@ -382,11 +379,8 @@ public class P8 {
 }
 ```
 
-### Sample Output
+## Sample Output
 
-```text
+``` text
 Binary : 1010
 ```
-````
-
-````
