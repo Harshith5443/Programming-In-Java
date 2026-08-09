@@ -374,6 +374,47 @@ public class P1 {
     }
 }
 ```
+````
+
+````markdown
+### Question 9
+
+**Problem:**  
+Write a Java program to demonstrate **`Integer.parseInt()`** and **`String.valueOf()`**.
+
+**Input:** `100`
+
+### Java Code
+
+```java
+public class P9 {
+    public static void main(String[] args) {
+
+        String str = "100";
+
+        int num = Integer.parseInt(str);
+
+        System.out.println("String : " + str);
+        System.out.println("Integer : " + num);
+
+        int n = 200;
+
+        String str1 = String.valueOf(n);
+
+        System.out.println("Integer : " + n);
+        System.out.println("String : " + str1);
+    }
+}
+```
+
+### Sample Output
+
+```text
+String : 100
+Integer : 100
+Integer : 200
+String : 200
+```
 
 ### Sample Output
 
