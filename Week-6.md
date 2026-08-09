@@ -335,3 +335,45 @@ public class P7 {
 }
 
 ```
+### Question 8
+
+**Problem:**  
+Write a Java program to **convert an Integer to Binary**.
+
+**Input:** `10`
+
+### Java Code
+
+```java
+public class P1 {
+
+    static String binary(int num) {
+
+        String str = "";
+
+        while (num > 0) {
+
+            int rem = num % 2;
+
+            str = rem + str;
+
+            num = num / 2;
+        }
+
+        return str;
+    }
+
+    public static void main(String[] args) {
+
+        int num = 10;
+
+        System.out.println("Binary : " + binary(num));
+    }
+}
+```
+
+### Sample Output
+
+```text
+Binary : 1010
+```
