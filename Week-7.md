@@ -259,3 +259,93 @@ public class P5 {
 ```text
 Prime Number
 ```
+
+````
+````markdown
+### Question 1
+
+**Problem:**  
+Write a Java program to find the **GCD (Greatest Common Divisor)** of two numbers.
+
+**Input:** `12, 18`
+
+### Java Code
+
+```java
+public class P1 {
+
+    static int gcd(int a, int b) {
+
+        while (a != 0) {
+
+            int temp = a;
+
+            a = a % b;
+
+            b = temp;
+        }
+
+        return b;
+    }
+
+    public static void main(String[] args) {
+
+        int a = 12;
+        int b = 18;
+
+        System.out.println("GCD : " + gcd(a, b));
+    }
+}
+```
+
+### Sample Output
+
+```text
+GCD : 6
+```
+
+````
+````markdown
+### Question 2
+
+**Problem:**  
+Write a Java program to find the **LCM (Least Common Multiple)** of two numbers.
+
+**Input:** `12, 18`
+
+### Java Code
+
+```java
+public class P2 {
+
+    static int gcd(int a, int b) {
+
+        while (a != 0) {
+
+            int temp = a;
+
+            a = a % b;
+
+            b = temp;
+        }
+
+        return b;
+    }
+
+    public static void main(String[] args) {
+
+        int a = 12;
+        int b = 18;
+
+        int lcm = (a * b) / gcd(a, b);
+
+        System.out.println("LCM : " + lcm);
+    }
+}
+```
+
+### Sample Output
+
+```text
+LCM : 36
+```
