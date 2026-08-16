@@ -343,9 +343,57 @@ public class P2 {
     }
 }
 ```
-
 ### Sample Output
 
 ```text
 LCM : 36
 ```
+````
+````markdown
+### Question 1
+
+**Problem:**  
+Write a Java program to check whether the given number is an **Armstrong Number** or not.
+
+**Input:** `153`
+
+### Java Code
+
+```java
+public class P1 {
+    public static void main(String[] args) {
+
+        int no = 153;
+
+        int n = no;
+        int temp = no;
+
+        int sum = 0;
+        int count = 0;
+
+        while (n != 0) {
+
+            count++;
+
+            n = n / 10;
+        }
+
+        while (no != 0) {
+
+            int rem = no % 10;
+
+            sum += Math.pow(rem, count);
+
+            no = no / 10;
+        }
+
+        if (sum == temp) {
+
+            System.out.println("Armstrong Number");
+
+        } else {
+
+            System.out.println("Not an Armstrong Number");
+        }
+    }
+}
