@@ -1,3 +1,4 @@
+````markdown
 ### Question 1
 
 **Problem:**  
@@ -28,6 +29,8 @@ public class P1 {
 ```text
 Sorted Array : [10, 20, 30, 40, 50]
 ```
+````
+````markdown
 ### Question 2
 
 **Problem:**  
@@ -67,7 +70,8 @@ public class P2 {
 ```text
 Number is Present index : 2
 ```
-
+````
+````markdown
 ### Question 3
 
 **Problem:**  
