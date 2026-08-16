@@ -1,3 +1,4 @@
+```
 ## 41. What is Runtime Polymorphism or Dynamic Method Dispatch?
 
 The method declaration gets bound to its definition at runtime by the JVM based on the object created. This is called **runtime polymorphism**.
