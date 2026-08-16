@@ -355,6 +355,8 @@ LCM : 36
 **Problem:**  
 Write a Java program to check whether the given number is an **Armstrong Number** or not.
 
+### An Armstrong number is a number in which the sum of each digit raised to the power of the total number of digits is equal to the original number.
+
 **Input:** `153`
 
 ### Java Code
