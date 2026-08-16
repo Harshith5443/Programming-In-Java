@@ -399,3 +399,300 @@ public class P1 {
         }
     }
 }
+
+````
+````markdown
+### Question 2
+
+**Problem:**  
+Write a Java program to check whether the given number is a **Disarium Number** or not.
+
+**What is a Disarium Number?**  
+A **Disarium Number** is a number in which the sum of its digits raised to their **respective positions** is equal to the original number.
+
+### Java Code
+
+```java
+public class P2 {
+    public static void main(String[] args) {
+
+        int no = 135;
+
+        int n = no;
+        int temp = no;
+
+        int sum = 0;
+        int count = 0;
+
+        while (n != 0) {
+
+            count++;
+
+            n = n / 10;
+        }
+
+        while (no != 0) {
+
+            int rem = no % 10;
+
+            sum += Math.pow(rem, count);
+
+            count--;
+
+            no = no / 10;
+        }
+
+        if (sum == temp) {
+
+            System.out.println("Disarium Number");
+
+        } else {
+
+            System.out.println("Not a Disarium Number");
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+Disarium Number
+```
+````
+````markdown
+### Question 3
+
+**Problem:**  
+Write a Java program to find the **sum of array elements**.
+
+**Input:** `10, 20, 30, 40, 50`
+
+### Java Code
+
+```java
+public class P3 {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        int sum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            sum += arr[i];
+        }
+
+        System.out.println("Sum of Array Elements : " + sum);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Sum of Array Elements : 150
+```
+````
+````markdown
+### Question 4
+
+**Problem:**  
+Write a Java program to find the **sum of even elements in an array**.
+
+**Input:** `10, 20, 15, 30, 25, 40`
+
+### Java Code
+
+```java
+public class P4 {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 15, 30, 25, 40};
+
+        int sum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] % 2 == 0) {
+
+                sum += arr[i];
+            }
+        }
+
+        System.out.println("Sum of Even Array Elements : " + sum);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Sum of Even Array Elements : 100
+```
+````
+````markdown
+### Question 5
+
+**Problem:**  
+Write a Java program to find the **multiplication of odd elements in an array**.
+
+**Input:** `10, 21, 15, 30, 25, 40`
+
+### Java Code
+
+```java
+public class P5 {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 21, 15, 30, 25, 40};
+
+        int product = 1;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] % 2 != 0) {
+
+                product *= arr[i];
+            }
+        }
+
+        System.out.println("Multiplication of Odd Array Elements : " + product);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Multiplication of Odd Array Elements : 7875
+```
+````
+````markdown
+### Question 6
+
+**Problem:**  
+Write a Java program to find the **multiplication of array elements which are divisible by 3**.
+
+**Input:** `10, 21, 15, 30, 25, 40`
+
+### Java Code
+
+```java
+public class P6 {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 21, 15, 30, 25, 40};
+
+        int product = 1;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] % 3 == 0) {
+
+                product *= arr[i];
+            }
+        }
+
+        System.out.println("Multiplication of Elements Divisible by 3 : " + product);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Multiplication of Elements Divisible by 3 : 9450
+```
+````
+````markdown
+### Question 7
+
+**Problem:**  
+Write a Java program to **count the even and odd elements in an array**.
+
+**Input:** `10, 21, 15, 30, 25, 40`
+
+### Java Code
+
+```java
+public class P7 {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 21, 15, 30, 25, 40};
+
+        int evenCount = 0;
+        int oddCount = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] % 2 == 0) {
+
+                evenCount++;
+
+            } else {
+
+                oddCount++;
+            }
+        }
+
+        System.out.println("Even Array Elements Count : " + evenCount);
+        System.out.println("Odd Array Elements Count : " + oddCount);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Even Array Elements Count : 3
+Odd Array Elements Count : 3
+```
+````
+````markdown
+### Question 8
+
+**Problem:**  
+Write a Java program to **reverse the elements of an array**.
+
+**Input:** `10, 20, 30, 40, 50`
+
+### Java Code
+
+```java
+public class P8 {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        int i = 0;
+        int j = arr.length - 1;
+
+        while (i < j) {
+
+            int temp = arr[i];
+
+            arr[i] = arr[j];
+
+            arr[j] = temp;
+
+            i++;
+            j--;
+        }
+
+        System.out.println("Reversed Array : ");
+       //System.out.println("Reversed Array : " + Arrays.toString(arr));
+        for (int k = 0; k < arr.length; k++) {
+
+            System.out.print(arr[k] + " ");
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+Reversed Array :
+50 40 30 20 10
+```
