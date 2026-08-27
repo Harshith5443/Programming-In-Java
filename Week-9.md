@@ -42,3 +42,45 @@ public class P1 {
 ```text
 Sorted Array : [10, 20, 30, 40, 50]
 ```
+````
+````markdown
+### Question 2
+
+**Problem:**  
+Write a Java program to find the **first positive missing number** in the range `1-10`.
+
+**Input:** `1, 2, 3, 4, 6, 7, 8, 9, 10`
+
+### Java Code
+
+```java
+public class P2 {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 6, 7, 8, 9, 10};
+
+        int n = arr[arr.length - 1];
+
+        int totalSum = n * (n + 1) / 2;
+
+        int sum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            sum += arr[i];
+        }
+
+        System.out.println("Missing number is: " + (totalSum - sum));
+    }
+}
+```
+
+### Sample Output
+
+```text
+Missing number is: 5
+```
+````markdown
+````markdown
+````markdown
+````markdown
