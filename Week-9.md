@@ -80,7 +80,52 @@ public class P2 {
 ```text
 Missing number is: 5
 ```
+````
 ````markdown
+### Question 3
+
+**Problem:**  
+Write a Java program to **rotate the array towards the right direction based on the key value**.
+
+**Input:**  
+Array: `1, 2, 3, 4, 5`  
+Key: `10`
+
+### Java Code
+
+```java
+import java.util.Arrays;
+
+public class P3 {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int key = 10;
+
+        int n = arr.length;
+
+        int k = key % n;
+
+        int[] temp = new int[n];
+
+        for (int i = 0; i < n; i++) {
+
+            temp[(i + k) % n] = arr[i];
+            // (index + rotationValue) % lengthOfArray
+        }
+
+        System.out.println("Right Rotated Array : " + Arrays.toString(temp));
+    }
+}
+```
+### Sample Output
+
+```text
+Right Rotated Array : [1, 2, 3, 4, 5]
+```
+
+````
 ````markdown
 ````markdown
 ````markdown
