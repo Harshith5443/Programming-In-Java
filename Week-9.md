@@ -127,5 +127,178 @@ Right Rotated Array : [3, 4, 5, 6, 1, 2]
 
 ````
 ````markdown
+### Question 4
+
+**Problem:**  
+Write a Java program to **rotate the array towards the left direction based on the key value**.
+
+**Input:**  
+Array: `1, 2, 3, 4, 5, 6`  
+Key: `10`
+
+### Java Code
+
+```java
+import java.util.Arrays;
+
+public class P4 {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5, 6};
+
+        int key = 10;
+
+        int n = arr.length;
+
+        int k = key % n;
+
+        int[] temp = new int[n];
+
+        for (int i = 0; i < n; i++) {
+
+            temp[i] = arr[(i + k) % n];
+            // (index + rotationValue) % lengthOfArray
+        }
+
+        System.out.println("Left Rotated Array : " + Arrays.toString(temp));
+    }
+}
+```
+
+### Sample Output
+
+```text
+Left Rotated Array : [5, 6, 1, 2, 3, 4]
+```
+````
 ````markdown
+### Question 5
+
+**Problem:**  
+Write a Java program to print the **zero values first and later the non-zero numbers**.
+
+**Input:**  
+Array: `1, 0, 0, 2, 3, 0, 4`
+
+### Java Code
+
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 0, 0, 2, 3, 0, 4};
+
+        // Print zeroes first
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] == 0) {
+
+                System.out.print(arr[i] + " ");
+            }
+        }
+
+        // Print non-zero numbers later
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] != 0) {
+
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+0 0 0 1 2 3 4
+```
+````
 ````markdown
+### Question 6
+
+**Problem:**  
+Write a Java program to print the **non-zero numbers first and zero values last**.
+
+**Input:**  
+Array: `1, 0, 0, 2, 3, 0, 4`
+
+### Java Code
+
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 0, 0, 2, 3, 0, 4};
+
+        // Print non-zero numbers first
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] != 0) {
+
+                System.out.print(arr[i] + " ");
+            }
+        }
+
+        // Print zeroes last
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] == 0) {
+
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+1 2 3 4 0 0 0
+```
+````
+````markdown
+### Question 7
+
+**Problem:**  
+Write a Java program to print the **positive numbers first and negative numbers last**.
+
+**Input:**  
+Array: `-1, 1, 3, -2, 4, 0, -5`
+
+### Java Code
+
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {-1, 1, 3, -2, 4, 0, -5};
+
+        // Print positive numbers first
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] > 0) {
+
+                System.out.print(arr[i] + " ");
+            }
+        }
+
+        // Print negative numbers last
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] < 0) {
+
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+1 3 4 -1 -2 -5
+```
