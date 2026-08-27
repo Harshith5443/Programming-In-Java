@@ -99,7 +99,7 @@ import java.util.Arrays;
 public class P3 {
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = {1, 2, 3, 4, 5,6};
 
         int key = 10;
 
@@ -122,7 +122,7 @@ public class P3 {
 ### Sample Output
 
 ```text
-Right Rotated Array : [1, 2, 3, 4, 5]
+Right Rotated Array : [3, 4, 5, 6, 1, 2]
 ```
 
 ````
