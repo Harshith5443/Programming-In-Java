@@ -175,7 +175,7 @@ Left Rotated Array : [5, 6, 1, 2, 3, 4]
 ### Question 5
 
 **Problem:**  
-Write a Java program to print the **zero values first and later the non-zero numbers**.
+Write a Java program to print the **zero values first and later the other numbers**.
 
 **Input:**  
 Array: `1, 0, 0, 2, 3, 0, 4`
@@ -183,28 +183,38 @@ Array: `1, 0, 0, 2, 3, 0, 4`
 ### Java Code
 
 ```java
-public class Main {
+import java.util.Arrays;
+
+public class P5 {
     public static void main(String[] args) {
 
         int[] arr = {1, 0, 0, 2, 3, 0, 4};
 
-        // Print zeroes first
+        int[] temp = new int[arr.length];
+
+        int index = 0;
+
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] == 0) {
 
-                System.out.print(arr[i] + " ");
+                temp[index] = arr[i];
+
+                index++;
             }
         }
 
-        // Print non-zero numbers later
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] != 0) {
 
-                System.out.print(arr[i] + " ");
+                temp[index] = arr[i];
+
+                index++;
             }
         }
+
+        System.out.println("Zero First Array : " + Arrays.toString(temp));
     }
 }
 ```
@@ -212,8 +222,9 @@ public class Main {
 ### Sample Output
 
 ```text
-0 0 0 1 2 3 4
+Zero First Array : [0, 0, 0, 1, 2, 3, 4]
 ```
+
 ````
 ````markdown
 ### Question 6
