@@ -242,22 +242,14 @@ public class Main {
     public static void main(String[] args) {
 
         int[] arr = {1, 0, 0, 2, 3, 0, 4};
+        int[] temp=new int[arr.length];
+        int index=0;
 
         // Print non-zero numbers first
         for (int i = 0; i < arr.length; i++) {
-
             if (arr[i] != 0) {
-
-                System.out.print(arr[i] + " ");
-            }
-        }
-
-        // Print zeroes last
-        for (int i = 0; i < arr.length; i++) {
-
-            if (arr[i] == 0) {
-
-                System.out.print(arr[i] + " ");
+                temp[index]=arr[i];
+                index++;
             }
         }
     }
@@ -286,13 +278,15 @@ public class Main {
     public static void main(String[] args) {
 
         int[] arr = {-1, 1, 3, -2, 4, 0, -5};
+        int [] temp=new int[arr.length];
+        int index=0;
 
         // Print positive numbers first
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] > 0) {
-
-                System.out.print(arr[i] + " ");
+               temp[index]=arr[i];
+                index++;
             }
         }
 
@@ -300,8 +294,8 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] < 0) {
-
-                System.out.print(arr[i] + " ");
+                temp[index]=arr[i];
+                index++;
             }
         }
     }
