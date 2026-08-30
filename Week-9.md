@@ -341,20 +341,146 @@ public class Main {
 Minimum Value : 1
 ```
 
+````
+````markdown
+### Question 10
+
+**Problem:**  
+Write a Java program to find the **Second Maximum Value in an Unsorted Array**.
+
+**Input:**  
+Array: `7, 1, 8, 3, 5`
+
+### Java Code
+
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {7, 1, 8, 3, 5};
+
+        int max = Integer.MIN_VALUE;
+        int secondMax = Integer.MIN_VALUE;
+
+        for (int no : arr) {
+
+            if (no > max) {
+
+                secondMax = max;
+
+                max = no;
+
+            } else if (no > secondMax && no != max) {
+
+                secondMax = no;
+            }
+        }
+
+        System.out.println("Second Maximum Value : " + secondMax);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Second Maximum Value : 7
+```
+
 
 ````
 ````markdown
+### Question 11
 
+**Problem:**  
+Write a Java program to find the **Second Minimum Value in an Unsorted Array**.
+
+**Input:**  
+Array: `7, 1, 8, 3, 5`
+
+### Java Code
+
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {7, 1, 8, 3, 5};
+
+        int min = Integer.MAX_VALUE;
+        int secondMin = Integer.MAX_VALUE;
+
+        for (int no : arr) {
+
+            if (no < min) {
+
+                secondMin = min;
+
+                min = no;
+
+            } else if (no < secondMin && no != min) {
+
+                secondMin = no;
+            }
+        }
+
+        System.out.println("Second Minimum Value : " + secondMin);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Second Minimum Value : 3
+```
 
 ````
 ````markdown
+### Question 12
 
-````
-````markdown
+**Problem:**  
+Write a Java program to find the **Best Time to Buy and Sell the Stock to get the Maximum Profit**.
 
+**Input:**  
+Array: `7, 1, 6, 3, 8`
 
-````
-````markdown
+### Java Code
+
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {7, 1, 6, 3, 8};
+
+        int minPrice = Integer.MAX_VALUE;
+
+        int profit = Integer.MIN_VALUE;
+
+        for (int price : arr) {
+
+            if (price < minPrice) {
+
+                minPrice = price;
+            }
+
+            int currentProfit = price - minPrice;
+
+            if (currentProfit > profit) {
+
+                profit = currentProfit;
+            }
+        }
+
+        System.out.println("Maximum Profit : " + profit);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Maximum Profit : 7
+```
 
 ````
 ````markdown
