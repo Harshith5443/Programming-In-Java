@@ -304,6 +304,43 @@ Maximum Value : 8
 
 ````
 ````markdown
+### Question 9
+
+**Problem:**  
+Write a Java program to find the **Minimum Value in an Unsorted Array**.
+
+**Input:**  
+Array: `7, 1, 8, 3, 5`
+
+### Java Code
+
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {7, 1, 8, 3, 5};
+
+        int min = Integer.MAX_VALUE;
+
+        for (int no : arr) {
+
+            if (no < min) {
+
+                min = no;
+            }
+        }
+
+        System.out.println("Minimum Value : " + min);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Minimum Value : 1
+```
+
 
 ````
 ````markdown
