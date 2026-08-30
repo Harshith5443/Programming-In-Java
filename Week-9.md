@@ -262,55 +262,9 @@ public class Main {
 ```text
 1 2 3 4 0 0 0
 ```
+
 ````
 ````markdown
-### Question 7
-
-**Problem:**  
-Write a Java program to print the **positive numbers first and negative numbers last**.
-
-**Input:**  
-Array: `-1, 1, 3, -2, 4, 0, -5`
-
-### Java Code
-
-```java
-public class Main {
-    public static void main(String[] args) {
-
-        int[] arr = {-1, 1, 3, -2, 4, 0, -5};
-        int [] temp=new int[arr.length];
-        int index=0;
-
-        // Print positive numbers first
-        for (int i = 0; i < arr.length; i++) {
-
-            if (arr[i] >= 0) {
-               temp[index]=arr[i];
-                index++;
-            }
-        }
-
-        // Print negative numbers last
-        for (int i = 0; i < arr.length; i++) {
-
-            if (arr[i] < 0) {
-                temp[index]=arr[i];
-                index++;
-            }
-        }
-        System.out.println("Zero First Array : " + Arrays.toString(temp));
-    }
-}
-```
-
-### Sample Output
-
-```text
-1 3 4 -1 -2 -5
-```
-````
-````markown
 ### Question 8
 
 **Problem:**  
@@ -347,19 +301,23 @@ public class Main {
 ```text
 Maximum Value : 8
 ```
+
 ````
-````markown
+````markdown
+
 ````
-````markown
+````markdown
+
+
 ````
-````markown
+````markdown
+
 ````
-````markown
+````markdown
+
+
 ````
-````markown
+````markdown
+
 ````
-````markown
-````
-````markown
-````
-````markown
+````markdown
