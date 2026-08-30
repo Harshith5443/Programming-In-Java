@@ -309,3 +309,57 @@ public class Main {
 ```text
 1 3 4 -1 -2 -5
 ```
+````
+````markown
+### Question 8
+
+**Problem:**  
+Write a Java program to find the **Maximum Value in an Unsorted Array**.
+
+**Input:**  
+Array: `7, 1, 8, 3, 5`
+
+### Java Code
+
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {7, 1, 8, 3, 5};
+
+        int max = Integer.MIN_VALUE;
+
+        for (int no : arr) {
+
+            if (no > max) {
+
+                max = no;
+            }
+        }
+
+        System.out.println("Maximum Value : " + max);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Maximum Value : 8
+```
+````
+````markown
+````
+````markown
+````
+````markown
+````
+````markown
+````
+````markown
+````
+````markown
+````
+````markown
+````
+````markown
