@@ -252,6 +252,7 @@ public class Main {
                 index++;
             }
         }
+        System.out.println("Zero First Array : " + Arrays.toString(temp));
     }
 }
 ```
@@ -284,7 +285,7 @@ public class Main {
         // Print positive numbers first
         for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i] > 0) {
+            if (arr[i] >= 0) {
                temp[index]=arr[i];
                 index++;
             }
@@ -298,6 +299,7 @@ public class Main {
                 index++;
             }
         }
+        System.out.println("Zero First Array : " + Arrays.toString(temp));
     }
 }
 ```
