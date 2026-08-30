@@ -482,5 +482,3 @@ public class Main {
 Maximum Profit : 7
 ```
 
-````
-````markdown
