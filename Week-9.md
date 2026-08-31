@@ -16,7 +16,7 @@ public class P1 {
 
         int[] arr = {40, 10, 50, 20, 30};
 
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
             for (int j = 0; j < arr.length - 1 - i; j++) {
 
