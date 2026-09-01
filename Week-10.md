@@ -376,3 +376,233 @@ public class P8 {
 ```text
 Missing number is: 5
 ```
+
+````
+````markdown
+### Question 9
+
+**Problem:**  
+Write a Java program to compare two strings and check their **lexicographical (Dictionary/Ascending) order** using `compareTo()`.
+
+### Java Code
+
+```java
+public class P9 {
+    public static void main(String[] args) {
+
+        String s1 = "abcde";
+        String s2 = "abcdf";
+
+        if (s1.compareTo(s2) < 0) {
+
+            System.out.println("true");
+
+        } else {
+
+            System.out.println("false");
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+true
+```
+
+````
+````markdown
+### Question 10
+
+**Problem:**  
+Write a Java program to arrange the **String elements of an `ArrayList` in lexicographical (Dictionary/Ascending) order** using `compareTo()`.
+
+### Java Code
+
+```java
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class P10 {
+    public static void main(String[] args) {
+
+        ArrayList<String> l1 =
+                new ArrayList<String>(
+                        Arrays.asList("Mango", "Apple", "Orange", "Banana")
+                );
+
+        for (int i = 0; i < l1.size(); i++) {
+
+            for (int j = 0; j < l1.size() - 1 - i; j++) {
+
+                if (l1.get(j).compareTo(l1.get(j + 1)) > 0) {
+
+                    String temp = l1.get(j);
+
+                    l1.set(j, l1.get(j + 1));
+
+                    l1.set(j + 1, temp);
+                }
+            }
+        }
+
+        System.out.println("Lexicographical Order : " + l1);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Lexicographical Order : [Apple, Banana, Mango, Orange]
+```
+
+````
+````markdown
+### Question 1
+
+**Problem:**  
+Write a Java program to find the **Longest Substring Without Repeating Characters**.
+
+**Input:** `abcabcbb`
+
+### Java Code
+
+```java
+import java.util.HashSet;
+
+public class P1 {
+    public static void main(String[] args) {
+
+        String str = "abcabcbb";
+
+        HashSet<Character> s1 = new HashSet<>();
+
+        int j = 0;
+        int max = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+
+            char ch = str.charAt(i);
+
+            while (s1.contains(ch)) {
+
+                s1.remove(str.charAt(j));
+
+                j++;
+            }
+
+            s1.add(ch);
+
+            max = Math.max(max, s1.size());
+        }
+
+        System.out.println("Longest Substring Length : " + max);
+    }
+}
+```
+
+### Sample Output
+
+```text
+Longest Substring Length : 3
+```
+
+````
+````markdown
+### Question 2
+
+**Problem:**  
+Write a Java program to find the **frequency of each word in a sentence**.
+
+**Input:** `apple banana apple orange banana apple`
+
+### Java Code
+
+```java
+import java.util.HashMap;
+
+public class P2 {
+    public static void main(String[] args) {
+
+        String str = "apple banana apple orange banana apple";
+
+        String[] words = str.split(" ");
+
+        HashMap<String, Integer> m1 = new HashMap<>();
+
+        for (String word : words) {
+
+            if (m1.containsKey(word)) {
+
+                m1.put(word, m1.get(word) + 1);
+
+            } else {
+
+                m1.put(word, 1);
+            }
+        }
+
+        System.out.println(m1);
+    }
+}
+```
+
+### Sample Output
+
+```text
+{orange=1, banana=2, apple=3}
+```
+
+````
+````markdown
+### Question 3
+
+**Problem:**  
+Write a Java program to check whether the given sentence is a **Pangram** or not.
+
+**Pangram:**  
+A **Pangram** is a sentence that contains all **26 letters of the English alphabet** at least once.
+
+**Input:** `the quick brown fox jumps over the lazy dog`
+
+### Java Code
+
+```java
+import java.util.HashSet;
+
+public class P3 {
+    public static void main(String[] args) {
+
+        String str = "the quick brown fox jumps over the lazy dog";
+
+        HashSet<Character> s1 = new HashSet<>();
+
+        for (int i = 0; i < str.length(); i++) {
+
+            char ch = str.charAt(i);
+
+            if (ch >= 'a' && ch <= 'z') {
+
+                s1.add(ch);
+            }
+        }
+
+        if (s1.size() == 26) {
+
+            System.out.println("Pangram");
+
+        } else {
+
+            System.out.println("Not a Pangram");
+        }
+    }
+}
+```
+
+### Sample Output
+
+```text
+Pangram
+```
