@@ -674,7 +674,7 @@ public class P2 {
 ````
 ````markdown
 
-##3.Question
+## 3.Question
 
 Write a Java program to find the frequency of each word in a sentence and print the most repeated word.
 
