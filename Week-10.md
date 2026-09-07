@@ -670,3 +670,74 @@ public class P2 {
         });
     }
 }
+
+````
+````markdown
+
+##3.Question
+
+Write a Java program to find the frequency of each word in a sentence and print the most repeated word.
+
+### Java Code
+
+```java
+import java.util.HashMap;
+
+public class P3 {
+    public static void main(String[] args) {
+
+        String str = "apple banana apple orange banana apple";
+
+        String[] words = str.split(" ");
+
+        HashMap<String, Integer> map = new HashMap<>();
+
+        for (String word : words) {
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+
+        int max = 0;
+        String maxWord = "";
+
+        for (String word : map.keySet()) {
+            if (map.get(word) > max) {
+                max = map.get(word);
+                maxWord = word;
+            }
+        }
+
+        System.out.println(maxWord + " " + max);
+    }
+}
+
+````
+````markdown
+
+
+## 4.Question
+
+Write a Java program to find the frequency of each word in a sentence and remove duplicate words.
+
+### Java Code
+
+```java
+import java.util.HashMap;
+
+public class P4 {
+    public static void main(String[] args) {
+
+        String str = "apple banana apple orange banana apple";
+
+        String[] words = str.split(" ");
+
+        HashMap<String, Integer> map = new HashMap<>();
+
+        for (String word : words) {
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+
+        map.forEach((key, value) -> {
+            System.out.println(key);
+        });
+    }
+}
