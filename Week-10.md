@@ -604,3 +604,36 @@ public class P3 {
 ```text
 Pangram
 ```
+````
+````markdown
+# Frequency of Each Word in a Sentence – Print Unique Words
+
+## Question
+
+Write a Java program to find the frequency of each word in a sentence and print only the unique words.
+
+### Java Code
+
+```java
+import java.util.HashMap;
+
+public class P1 {
+    public static void main(String[] args) {
+
+        String str = "apple banana apple orange banana apple";
+
+        String[] words = str.split(" ");
+
+        HashMap<String, Integer> map = new HashMap<>();
+
+        for (String word : words) {
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+
+        map.forEach((key, value) -> {
+            if (value == 1) {
+                System.out.println(key);
+            }
+        });
+    }
+}
