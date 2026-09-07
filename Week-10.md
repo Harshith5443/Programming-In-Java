@@ -530,21 +530,17 @@ public class P2 {
 
         String[] words = str.split(" ");
 
-        HashMap<String, Integer> m1 = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap<>();
 
         for (String word : words) {
 
-            if (m1.containsKey(word)) {
-
-                m1.put(word, m1.get(word) + 1);
-
-            } else {
-
-                m1.put(word, 1);
-            }
+            map.put(word, map.getOrDefault(word, 0) + 1);
         }
 
-        System.out.println(m1);
+        map.forEach((key, value) -> {
+
+            System.out.println(key + " " + value);
+        });
     }
 }
 ```
@@ -552,7 +548,9 @@ public class P2 {
 ### Sample Output
 
 ```text
-{orange=1, banana=2, apple=3}
+orange 1
+banana 2
+apple 3
 ```
 
 ````
