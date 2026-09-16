@@ -36,3 +36,42 @@ public class P1 {
         System.out.println("Element Not Found");
     }
 }
+
+```
+````
+
+## Question 2
+
+**Problem:**  
+Write a Java program to group anagrams from a given array of strings.
+
+### Java Code
+
+```java
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.ArrayList;
+
+public class P2 {
+    public static void main(String[] args) {
+
+        String[] arr = {"eat", "tea", "tan", "ate", "nat", "bat"};
+
+        HashMap<String, ArrayList<String>> map = new HashMap<>();
+
+        for (String word : arr) {
+
+            char[] ch = word.toCharArray();
+
+            Arrays.sort(ch);
+
+            String key = new String(ch);
+
+            map.putIfAbsent(key, new ArrayList<>());
+
+            map.get(key).add(word);
+        }
+
+        System.out.println(map.values());
+    }
+}
