@@ -38,7 +38,6 @@ public class P1 {
 }
 
 ```
-````
 
 ## Question 2
 
@@ -73,5 +72,46 @@ public class P2 {
         }
 
         System.out.println(map.values());
+    }
+}
+
+```
+
+## Question 2
+
+**Problem:**  
+Write a Java program to find the maximum amount of water that can be stored between two vertical lines.
+
+### Java Code
+
+```java
+public class P2 {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+
+        int i = 0;
+        int j = arr.length - 1;
+        int maxWater = 0;
+
+        while (i < j) {
+
+            int height = Math.min(arr[i], arr[j]);
+            int width = j - i;
+
+            int water = height * width;
+
+            if (water > maxWater) {
+                maxWater = water;
+            }
+
+            if (arr[i] < arr[j]) {
+                i++;
+            } else {
+                j--;
+            }
+        }
+
+        System.out.println("Maximum Water : " + maxWater);
     }
 }
