@@ -39,7 +39,6 @@ public class P1 {
 ```
 
 ````markdown
-````
 # Pattern 2
 
 ## Question 2
